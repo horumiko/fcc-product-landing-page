@@ -1,0 +1,99 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+  }
+
+#header{
+    position: sticky;
+}
+
+.container{
+    width: 100vw;
+    max-height: 120px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+
+#header-img{
+    width: 300px;
+    height: auto;
+
+    
+}
+
+.header-logo{
+    display: inline-block;
+    width: 300px;
+    height: auto;
+}
+
+li{
+    display: inline-block;
+
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #000;
+}
+
+li{
+    margin-left: 10vw;
+}
+
+#nav-bar{
+    padding-right: 10vw;
+}
+
+#nav-bar > ul{
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+li{
+    text-align: center;
+}
+@media (max-width: 923px){
+    #header > .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #nav-bar{
+        padding-right: 2vw;
+    }
+}
+
+@media (max-width: 373px){
+    #nav-bar{
+      padding-right: 0;
+      width: 100vw;
+    }
+    #nav-bar > ul{
+        display: flex;
+        flex-direction: column;
+    }
+    li{
+        text-align: center;
+
+        margin: 2px;
+
+        font-size: 1.12rem;
+    }
+}
